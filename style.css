@@ -1,0 +1,45 @@
+body{
+display: flex;
+flex-direction: column;
+background-color: wheat;
+align-items: center;
+
+}
+.faq{
+    border: 1px solid;
+    min-width: 35vw;
+    margin: 15px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    border-radius: 15px;
+    transition: ease;
+}
+.faq .faq-text{
+    display: none;
+}
+.faq.active .faq-text{
+    display: inline;
+    
+}
+.faq-toggle{
+    position: absolute;
+    right: 30px;
+    top: 45px;
+    background-color: transparent;
+    border: 0;
+}
+.faq-toggle:focus{
+    outline: none;
+}
+.faq-toggle .fa-times{
+    display: none;
+}   
+.faq.active .faq-toggle .fa-times{
+    display: block;
+}
+.faq.active  .fa-chevron-down{
+    display: none;
+}
+
